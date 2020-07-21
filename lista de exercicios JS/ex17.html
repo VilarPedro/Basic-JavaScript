@@ -1,0 +1,46 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>ex17</title>
+</head>
+<body>
+	<input type="text" id="numero1" placeholder="Number 1"/>
+	<input type="text" id="numero2" placeholder="Number 2"/>
+	<button id="soma">Soma</button>
+	<input type="text" id="resultado-soma" readonly placeholder="Resultado"/>
+</body>
+<script type="text/javascript">
+	function soma(n1,n2){
+
+		if (n1 == ' ' || n2 == ' '){ console.log("entrou no if aaaaeeee")
+			// var errou = 0
+			return 0;
+		}	
+		else{
+			return parseInt(n1 + n2);
+		}
+	}
+	document.getElementById('soma').onclick=function(){
+		var n1 = document.getElementById('numero1').value;
+		var n2 = document.getElementById('numero2').value;
+		if (isNaN(n1)==true || isNaN(n2)==true){ console.log("entrou no priemiro if");
+			console.log(n1);
+			console.log(n2);
+			alert("não se pode somar letras com numero");	
+		}
+		else if (n1 == ' ' || n2 == ' ') { console.log("entrou no segundo if");
+			var resultado = soma(n1,n2); console.log(resultado)	
+			document.getElementById("resultado-soma").value = resultado;
+			console.log(n1);
+			console.log(n2);
+		}
+		else if (isNaN(n1)== false && isNaN(n2)==false) { console.log("entrou no terceiro if");
+			var resultado = soma(parseInt(n1),parseInt(n2));	
+			document.getElementById("resultado-soma").value = resultado;
+			console.log(n1);
+			console.log(n2);
+		}
+	};
+
+</script>
+</html>

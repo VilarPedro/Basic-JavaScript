@@ -1,0 +1,18 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>ex07</title>
+</head>
+<body>
+	<img src="https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=tru" id="lampada-desligada">
+	<!-- <img src="https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada-on.jpg?raw=true" id="lampada-ligada"> -->
+	<script type="text/javascript">
+		document.getElementById('lampada-desligada').addEventListener('mouseover',function(){
+			document.getElementById('lampada-desligada').src="https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada-on.jpg?raw=true" 
+		})
+		document.getElementById('lampada-desligada').addEventListener('mouseout',function(){
+			document.getElementById('lampada-desligada').src="https://github.com/gabrieldarezzo/helpjs-ravi/blob/master/images/lampada.jpg?raw=tru"
+		});
+	</script>
+</body>
+</html>

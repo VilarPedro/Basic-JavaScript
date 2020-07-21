@@ -1,0 +1,34 @@
+<html lang="pt-br">
+<head>
+	<meta charser="utf-8">
+	<title>ex10</title>
+</head>
+<body>
+	<input type="text" id="soma1" placeholder="Number 1"/>
+	<input type="text" id="soma2" placeholder="Number 2"/>
+	<button id="btn-soma">Soma</button>
+	<input type="text" id="resultado-soma" readonly placeholder="Resultado"/>
+</body>
+	<script type="text/javascript">
+		document.getElementById('btn-soma').onclick=function(){
+			var n1=document.getElementById('soma1').value;
+			console.log(n1);
+			var n2=document.getElementById('soma2').value;
+			console.log(n2);
+			console.log(typeof(n1));
+			console.log(typeof(n2));
+			
+			if (isNaN(n1)==true || isNaN(n2)==true){
+				alert("não se pode somar letras com numero")			
+			}
+			else if (isNaN(n1)==false && isNaN(n2)==false){
+				var result= parseInt(n1)+parseInt(n2)
+			}
+			// else {
+			// 	alert("não se pode somar numero com letras")
+			// }			
+			document.getElementById("resultado-soma").value = result
+		};
+
+	</script>
+</html>

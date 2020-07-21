@@ -1,0 +1,24 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>ex32</title>
+</head>
+<body>
+	<div>
+		<input type="text" id="entrada_input" onblur="dota()"/>
+
+	</div>
+
+</body>
+<script type="text/javascript">
+	function dota(){
+		var valor_input = document.getElementById('entrada_input').value
+		if (valor_input.indexOf("dota") >= 0 ){; console.log("entrou no if")
+			alert('Dota é melhor que LOL')
+		}
+		else{
+			alert(valor_input + " " +'não é igual a : "dota"')
+		}
+	}
+</script>
+</html>

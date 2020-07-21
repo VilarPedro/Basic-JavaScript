@@ -1,0 +1,21 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>ex21</title>
+</head>
+<body>
+	Digite o valor de sua compra:
+	<input type="number" id="valor_compra"/>
+	<button id="btn_desconto" onclick="calcula_desconto()">Desconto</button>
+
+</body>
+<script type="text/javascript">
+	function calcula_desconto(){
+		var valor1 =document.getElementById('valor_compra').value
+		console.log(valor1)
+		valor1 *= 0.05
+		console.log(valor1)
+		alert("O valor do seu desconto de 5% é:"+valor1)
+	}
+</script>
+</html>

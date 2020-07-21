@@ -1,0 +1,42 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>ex42</title>
+</head>
+<style type="text/css">
+.container {
+	position: relative;
+}
+.center{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+}
+</style>
+<body>
+  
+  <style type="text/css">
+  #quadrado {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+  }
+  </style>
+
+  <div id="quadrado" style="background-color: #f00;"></div>  
+
+  <script type="text/javascript">
+    document.getElementById("quadrado").style = "background-color: #f00;";
+  </script>
+
+
+</body>
+<script type="text/javascript">
+      setTimeout(function(){
+        alert("Olá mundo atrasado dois segundos"); 
+      }, 2000);        
+</script>
+</html>

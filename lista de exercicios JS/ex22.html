@@ -1,0 +1,27 @@
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<title>ex22</title>
+</head>
+<body>
+	Digite o ane em que você nasceu :
+	<input type="number" id="ano" />
+	<button id="btn_idade" onclick="data_nascimento()">Enviar</button>
+
+</body>
+<script type="text/javascript">
+	function data_nascimento(){
+		var ano_nasc = document.getElementById('ano').value
+		console.log
+		var ano_atual = 2019
+		var idade = ano_atual - ano_nasc
+		if (idade < 18){
+			alert("Menor de idade !")
+		}
+		else{
+			alert("Maior de idade !")
+		}
+
+	}
+</script>
+</html>

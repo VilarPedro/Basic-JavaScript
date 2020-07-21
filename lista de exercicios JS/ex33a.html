@@ -1,0 +1,22 @@
+<html lang='pt-br'>
+<head>
+	<title>ex33</title>
+</head>
+<body>
+	Digite a palavra "dota":
+	<input type="text" id="texto_input"/>
+	<button id="btn_input" onclick="dota()" >Enviar</button>
+</body>
+<script type="text/javascript">
+	function dota(){
+		var valor_input = document.getElementById('texto_input').value;
+		if (valor_input.indexOf("dota") >= 0 ){; console.log("entrou no if");
+			alert("Dota é melhor que LOL kkk")
+		}
+		else{
+			alert(valor_input + " " + 'não corresponde a palavra "dota"')
+		};
+	};
+</script>
+</html>
+

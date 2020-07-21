@@ -1,0 +1,31 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>ex12a</title>
+</head>
+<body id="body">
+	<div>
+		<button id="Verde">Verde</button>
+	</div>
+	<div>
+		<button id="Vermelho">Vermelho</button>
+	</div>
+
+	<style type="text/css">
+	#quadrado{
+		height: 100px;
+		width: 100px;
+	}
+	</style>
+	<div id="quadrado" style="background-color: #0000ff"></div>
+</body>
+	<script type="text/javascript">
+		document.getElementById("Verde").onclick=function(){
+			document.getElementById("body").style = "background-color: #00ff00;";
+		}
+		document.getElementById("Vermelho").onclick=function(){
+			document.getElementById("body").style = "background-color: #ff0000;";
+		}
+	</script>
+
+</html>

@@ -1,0 +1,24 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>ex05</title>
+</head>
+<body>
+	<div>
+		<!-- <p> Insira uma palavra:</p> -->		
+		<input type="text" palavra="palavra-inserida" id="palavra-inserida" placeholder="Insira uma palavra">
+		<input type="button" value="Quantidade de Carácter" id="button-qtd-caracter">
+	</div>
+</body>
+<body>
+	<script type="text/javascript">
+
+	// var valor_recebido = document.getElementById("palavra-inserida").value.length
+
+	document.getElementById("button-qtd-caracter").addEventListener("click",function(){
+		alert('A Quantidade de Carácteres é ' + document.getElementById("palavra-inserida").value.length + ' Consciderando os espaços.')
+	});
+
+	</script>
+</body>
+</html>

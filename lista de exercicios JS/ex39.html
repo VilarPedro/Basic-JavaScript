@@ -1,0 +1,30 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>ex39</title>
+</head>
+<body>
+
+	<div id="result">
+		<input type="text" id="entrada_input" placeholder="Digite um texto:"/>
+		<button id="enviar">Enviar</button>
+		<ul id="listaUl"></ul>
+	</div>
+
+</body>
+<script type="text/javascript">
+var array_test = [];
+document.getElementById('enviar').onclick=function(){
+	var valor_input = document.getElementById('entrada_input').value;
+	array_test.push(valor_input);
+	document.getElementById('listaUl').innerHTML = '';
+	i = 0
+	while (i < array_test.length){; console.log("entrou no while");
+		document.getElementById('listaUl').innerHTML += "<li>"+ array_test[i] + "</li>";
+		// document.getElementById('listaUl').innerHTML = "<br>";
+		i++
+	}
+};
+
+</script>
+</html>

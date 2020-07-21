@@ -1,0 +1,26 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>ex20</title>
+</head>
+<body>
+	<input type="number" id="num1"/>
+	<input type="number" id="num2"/>
+	<button id='enviar'>Enviar</button>
+</body>
+	<script type="text/javascript">
+		function multi(n1,n2){ console.log(n1)	
+			var result = n1*n2; console.log(result)
+			alert(result)
+			return result;
+		}
+		document.getElementById('enviar').onclick=function(){
+		var n1 = document.getElementById("num1").value;
+		console.log(n1)
+		var n2 = document.getElementById("num2").value;
+		console.log(n2)
+		multi(n1,n2);
+		}; console.log();
+
+	</script>
+</html>

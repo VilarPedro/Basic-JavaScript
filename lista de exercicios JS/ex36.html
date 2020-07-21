@@ -1,0 +1,20 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<title>ex36</title>
+</head>
+<body>
+	<div id="resultado"></div>
+
+</body>
+<script type="text/javascript">
+var d = new Date();
+var dia = d.getDate(); console.log(dia);
+var m = new Date();
+var mes = m.getMonth() +1; console.log(mes) ;
+var proximo_mes = mes + 1
+var ano = d.getFullYear(); console.log(ano);
+document.getElementById('resultado').innerHTML = "Hoje é :"+" "+dia+"\/"+mes+"\/"+ano+"."+ " "+"E o proximo mes, é o mes:"+" "+ proximo_mes
+
+</script>
+</html>

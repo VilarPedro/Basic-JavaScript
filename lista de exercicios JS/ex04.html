@@ -1,0 +1,23 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>ex04</title>
+</head>
+<body>
+	<div>
+		<p> Nome Completo: </p>
+		<input type="text" name="nome-completo" id="nome-completo" placeholder="Digite seu nome" >
+		<br/>
+		<input type="button" value="Exibir Nome" id="button-exibir-name"/>
+		<hr/>
+	</div>
+</body>
+<body>
+	<script type="text/javascript">
+	document.getElementById("button-exibir-name").addEventListener("click",function(){
+		const nomeConpleto = document.getElementById("nome-completo").value;
+		alert('O Nome do corno é:'+ nomeConpleto)
+	});
+	</script>
+</body>
+</html>

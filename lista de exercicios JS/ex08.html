@@ -1,0 +1,28 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>ex08</title>
+</head>
+<body>
+	CPF:
+	<input type="int" maxlength="11" id="cpf" placeholder="CPF:   .   .  ./  "/>
+	<input type="text" readonly id="apresentacao"/>
+	<button id="enviar">enviar</button>
+
+</body>
+	<script type="text/javascript">
+		// document.getElementById('cpf').addEventListener("keyup",function(){
+		// 	 cpf=document.getElementById('cpf').value;
+		// 		alert(cpf);
+		// });
+		document.getElementById("enviar").onclick=function(){
+			var cpf=document.getElementById('cpf').value;
+			document.getElementById("apresentacao").value = cpf.replace(/^([0-9]{3})([0-9]{3})([0-9]{3})([0-9]{2})$/,"$1.$2.$3/$4"); 
+			// alert()
+
+		};
+		// document.getElementById("cpf").blur function(){
+		//};
+		
+	</script>
+</html>

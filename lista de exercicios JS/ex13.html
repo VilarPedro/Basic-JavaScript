@@ -1,0 +1,28 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>ex07a</title>
+</head>
+<body>
+	<br>
+	<input type="text" name="nome" id="nome" placeholder="Nome">
+	<input type="text" lastname="sobrenome" id="lastname" placeholder="Sobrenome">
+	<button id="saudacao" >Saudação</button>
+	<hr>
+</body>
+<body>
+	<script type="text/javascript">
+	/*Exemo=pol de cometário de varias linhas 
+	aqui 
+	aqui 
+	aqui
+	e aqui também.
+	*/
+		document.getElementById("saudacao").addEventListener("click",function(){
+			var nome =document.getElementById("nome").value
+			var sobrenome =document.getElementById("lastname").value
+			alert('Olá'+nome+sobrenome)
+		})
+	</script>
+</body>
+</html>

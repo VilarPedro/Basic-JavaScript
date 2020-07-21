@@ -1,0 +1,23 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>ex09</title>
+</head>
+<body>
+	CPF:
+	<input type="int" maxlength="14" id="cpfPoint"/>
+	<button id="enviar">enviar</button>
+	<input type="text" readonly id="aprensentação"/>
+</body>
+	<script type="text/javascript">
+		
+		document.getElementById("enviar").addEventListener("click",function(){
+			console.log(document.getElementById("cpfPoint"));
+			var cpfPoint=document.getElementById('cpfPoint').value
+			// document.getElementById("aprensentação").value = cpfPoint.replace(/\./gi,"");
+			var trat=cpfPoint.replace(/\./gi,"");
+			document.getElementById("aprensentação").value = trat.replace("/","");
+		});
+	</script>
+
+</html>

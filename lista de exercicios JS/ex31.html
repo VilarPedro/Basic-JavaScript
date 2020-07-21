@@ -1,0 +1,26 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<title>ex30</title>
+</head>
+<body>
+	<div id="resultado"></div>
+
+</body>
+<script type="text/javascript">
+	var numero = ""
+	var multiplicador = 0
+	for ( numero = 1; numero <= 250; ){
+		console.log (numero);
+		for (multiplicador = 0 ; multiplicador <10; multiplicador*numero){
+			multiplicador++; console.log(multiplicador);
+			var result = numero * multiplicador; console.log(result);
+			document.getElementById('resultado').innerHTML += numero+ " " + "*" +" "+ multiplicador +" "+ "="+" "+result + "<br/>";
+		}
+		numero++;
+		document.getElementById('resultado').innerHTML += "<hr/>"
+		
+	}
+
+</script>
+</html>

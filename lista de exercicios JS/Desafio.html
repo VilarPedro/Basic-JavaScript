@@ -1,0 +1,103 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Desafio do Urso</title>
+	
+	<style type="text/css">
+	#divs{
+		width: 1200px;
+		height: 60px;
+		border:solid 3px;
+		color: black;
+		background: white;
+
+	}
+
+	html, body {
+		padding: 0px;
+		margin: 0px;
+	}
+
+	body{
+		 width:100%;
+		 background: orange;
+	}
+	
+	#urso-img1 {
+		position: fixed;
+		width: 60px
+
+	}
+	</style>
+
+
+</head>
+<body >
+	<div id='divs'>
+	<!-- Carregando as imagens segundo o exemplo, para evitar o loading durante a animação -->
+	<img  src="https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/chara-1.png" alt="" style="display:none;"/>
+	<img  src="https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/chara-2.png" alt="" style="display:none;"/>
+	<img  src="https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/chara-3.png" alt="" style="display:none;"/>
+
+	<img id="urso-img1" alt="Urso animado" src="https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/chara-1.png"/>
+	</div>
+
+	
+
+<script type="text/javascript">
+
+const larguraDaTela = window.screen.availWidth;
+var position = 0;
+var aumentar = true;
+
+var animacaoFrame = 0;
+
+const animacaoUrso =[
+	'https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/chara-1.png',
+	'https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/chara-2.png',
+	'https://raw.githubusercontent.com/gabrieldarezzo/helpjs-ravi/master/images/chara-3.png',
+];
+
+setInterval(function(){
+
+	if (position > (larguraDaTela + 200)){
+		return false;
+	}
+
+	document.getElementById("urso-img1").src = animacaoUrso[animacaoFrame];
+
+	document.getElementById("urso-img1").style = "left: " + position + "px;";
+
+	position +=4;
+
+	animacaoFrame++;
+	if (animacaoFrame > 2){
+		animacaoFrame = 0;
+	}
+
+},200);
+
+
+// var lista = ['img1','img2','img3'];
+// document.getElementById('div_dos_ursos').innrHTML='';
+// i = 0
+// while(i<lista.length){
+// 	var valor_imprimir = lista[i]
+// 	console.log(i);
+// 	i = img1;
+// 	if (i = img1) {; 
+// 		console.log(i);
+// 		setTimeout(function(){
+// 			i = img2
+// 			console.log(i);
+// 		},1000);
+// 	}
+// 	if (i = img2){
+// 		i = img3
+// 		console.log(i);
+// 	};
+// };
+
+</script>
+</body>
+</html>
