@@ -1,0 +1,39 @@
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Desafio é primo!</title>
+</head>
+<body>
+	<div>
+		<h1>Teste se seu número é primo ou não?</h1>
+		<h2>Digite um numero com quantas casas quiser !</h2>
+		<br>
+		<input type="number" id="valor_input" placeholder="Digite um numero:"/>
+		<button id="btn">Verificar</button>
+
+
+	</div>
+
+</body>
+<script type="text/javascript">
+
+document.getElementById("btn").addEventListener("click",function(){
+	var num_digitado = document.getElementById('valor_input').value;
+	for (var i = 2; i <= num_digitado; i++) {
+		console.log(i);
+		if( num_digitado % i == 0){
+			alert("Esse número não é primo")
+			
+			break
+			console.log(i);
+		}
+		else if ( i == num_digitado- 1){
+			alert("É primo.")
+		};
+	};
+
+});
+
+
+</script>
+</html>

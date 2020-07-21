@@ -1,0 +1,41 @@
+<html lang="pt-br">
+<head>
+	<meta charser="utf-8">
+	<title>Fibonacci</title>
+</head>
+<body>
+	<div>
+		<h2 font-size :0,5;>Quantos numeros da sequencia de fibonacci devem ser gerados</h2>
+		<br>
+		<input type="number" id="entrada_input"/>
+		<button id="btn_gerar">Gerar</button>
+	</div>
+	<div id="resultado"></div>
+
+</body>
+<script type="text/javascript">
+	
+	document.getElementById('btn_gerar').onclick=function(){
+
+		var  valor_input = document.getElementById('entrada_input').value;
+		if (valor_input < 1 ||  valor_input > 20) {
+			alert("Esse numero não é aceitavel!");
+
+		}
+		else if (valor_input >= 0){
+			var a = 1;
+			var b = 1;
+			var i = 0;
+			while(i < valor_input){
+				var c = a + b;
+				document.getElementById('resultado').innerHTML +=  c +"<br/>";
+				a = b;
+				b = c;
+				i++;
+
+			}
+		}
+	}
+
+</script>
+</html>
